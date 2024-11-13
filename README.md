@@ -55,3 +55,5 @@
 ├── 📄 styles.css           # Estilos visuales y diseño de la página
 ├── 📄 script.js            # Lógica del frontend y conexión con MockAPI
 ├── 📄 README.md            # Documentación del proyecto
+
+---
