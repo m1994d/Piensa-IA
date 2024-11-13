@@ -1,0 +1,243 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e5e5e5;
+}
+
+body {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    color: #ff0000;
+    font-size: 2rem;
+    text-shadow: 0px 0px 8px #ff0000;
+}
+
+/* Contenedor de Productos */
+.producto-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Estilo de Producto */
+.producto {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.4);
+}
+
+.producto img {
+    mask-image: linear-gradient(
+        black 10%,
+        transparent
+    );
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+}
+
+.producto-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.producto-info h3 {
+    color: #ff0000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 6px #ff0000;
+}
+
+.producto-info p {
+    color: #aaa;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.producto-precio {
+    font-size: 1.2rem;
+    color: #ffef14;
+    text-shadow: 0px 0px 4px #efff14;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+
+.boton-eliminar-producto {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-eliminar-producto:hover {
+    background-color: #ff0000;
+}
+
+
+/*BOtones agregar y wthsp*/
+.boton-agregar,
+.boton-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-agregar {
+    background-color: #9c0000;
+    color: #ffffff;
+}
+
+.boton-agregar:hover {
+    background-color: #bf0000;
+    color: #ffffff;
+}
+
+/*Formato agregar producto*/
+
+.agregar-producto {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+}
+
+.agregar-producto h2 {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 8px #ff0000;
+}
+
+.agregar-producto input,
+.agregar-producto textarea,
+.agregar-producto button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.agregar-producto button {
+    background-color: #ff0000;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-producto button:hover {
+    background-color: #bf0000;
+    color: #ffffff;
+}
+
+
+/* Carrito de Compras */
+.carrito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+}
+
+.carrito h2 {
+    font-size: 1.5rem;
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 8px #ff0000;
+}
+
+.carrito-lista {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.carrito-item-nombre {
+    color: #e5e5e5;
+    font-size: 1rem;
+}
+
+.carrito-item-precio {
+    color: #e7ff14;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 4px #ffdc14;
+}
+
+.boton-eliminar {
+    background: transparent;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    color: #ff0000;
+}
+
+.total-precio {
+    font-size: 1.4rem;
+    color: #fffb14;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-whatsapp {
+    background-color: #25D366;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: none ;
+}
+
+.boton-whatsapp:hover {
+    background-color: #0a9139;
+}
