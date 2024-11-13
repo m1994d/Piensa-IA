@@ -56,4 +56,32 @@
 ├── 📄 script.js            # Lógica del frontend y conexión con MockAPI
 ├── 📄 README.md            # Documentación del proyecto
 
+```
 ---
+
+## Cómo Ejecutar el Proyecto
+
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/piensa-ia.git
+
+2. **Abrir `index.html`**: Abre el archivo `index.html` en tu navegador para ver la página en funcionamiento.
+3. * **Configuración de MockAPI**: * Asegúrate de que la URL de MockAPI en `script.js` (`API_URL`) esté configurada correctamente.
+4. * **Prueba las Funcionalidades**: Navega, agrega productos al carrito, elimina productos y envía el pedido a WhatsApp.
+  
+
+---
+
+## Mejoras futuras
+
+* Autenticación de Usuarios: Implementar un sistema de autenticación para que los clientes tengan cuentas personales.
+* Integración de Pago: Agregar una opción de pago en línea con servicios como Stripe o PayPal.
+* Búsqueda y Filtrado: Incorporar funciones de búsqueda y filtro para mejorar la navegación en la tienda.
+* Notificaciones: Agregar notificaciones o alertas para mejorar la experiencia de usuario al añadir o eliminar productos del carrito.
+
+---
+
+## Contribución
+
+* Las contribuciones son bienvenidas. Si deseas agregar funcionalidades o mejorar el código, no dudes en hacer un pull request.
+
